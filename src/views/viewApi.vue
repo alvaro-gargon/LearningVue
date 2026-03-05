@@ -55,3 +55,8 @@ export default {
   },
 }
 </script>
+<style scoped>
+.row {
+  background-color: red;
+}
+</style>
