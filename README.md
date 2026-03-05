@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 # LearningVue
 This is a repository which goal is to recopilate the first program i ever made with Vue.js
-=======
-# secondTry
+The Vue version I am using is Vue3, besides im using technologies such as Vite, JSX, Router SPA, Pinia, Vitest, Playwrigth, Linter and Prettier (all things related to Vue). Despite the possiblility of using the 'Composition API', new in Vue3, i choosed to use Options API, the 'classic one', due to its simplicity and relation with POO which i am familiar. If you are a Vue expert, there is nothing interesting to see here. I will leave the README content that auto-generates when you create a Vue project:
+
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -71,4 +70,4 @@ npm run test:e2e -- --debug
 ```sh
 npm run lint
 ```
->>>>>>> master
+
