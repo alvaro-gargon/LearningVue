@@ -46,7 +46,7 @@ export default {
   },
 }
 </script>
-<style>
+<style scoped>
 .row,
 .row div:nth-of-type(2) {
   display: flex;
@@ -55,13 +55,14 @@ export default {
 .row div:nth-of-type(1) {
   width: 30%;
 }
+.row div:nth-of-type(1) article {
+  align-items: center;
+  justify-self: center;
+}
 .row div:nth-of-type(2) {
   width: 70%;
 }
-.row div:nth-of-type(1) {
-  align-items: center;
-  justify-content: center;
-}
+
 .columna {
   flex-direction: column !important;
 }

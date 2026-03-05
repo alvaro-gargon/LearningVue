@@ -1,5 +1,23 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import { DxPopover } from 'devextreme-vue/popover'
+
+const animationConfig = {
+  show: {
+    type: 'pop',
+    from: {
+      scale: 0,
+    },
+    to: {
+      scale: 1,
+    },
+  },
+  hide: {
+    type: 'fade',
+    from: 1,
+    to: 0,
+  },
+}
 </script>
 
 <template>
@@ -7,17 +25,32 @@ import { RouterLink, RouterView } from 'vue-router'
     <header>
       <h1>Esta es una prueba de primer uso del framework VUE</h1>
     </header>
-    <h2>Vamos a probar cositas</h2>
     <h3>
       Como se puede comprobar,esto es una SPA (single page application) ya que, aunque cambia la
       ruta en la url, en verdad seguimos en la misma página, y NO SE HA RECARGADO al cambiar la ruta
     </h3>
+    <div class="dx-field-value-static">
+      <p>
+        <span id="subject4">Con la api DxPopover</span>
+        (<a id="link4">ver</a>)
+      </p>
+
+      <DxPopover
+        :width="300"
+        :shading="true"
+        target="#link4"
+        show-event="click"
+        position="top"
+        shading-color="rgba(0, 0, 0, 0.5)"
+      >
+        Esto es un popop "import { DxPopover } from 'devextreme-vue/popover'"
+      </DxPopover>
+    </div>
 
     <RouterView />
   </main>
   <footer>
     <RouterLink to="/"><button>Principal</button></RouterLink>
-    <RouterLink to="/pruebas"><button>Pruebas</button></RouterLink>
     <RouterLink to="/componentes"><button>Componentes</button></RouterLink>
     <RouterLink to="/apis"><button>APIs</button></RouterLink>
   </footer>
@@ -37,6 +70,7 @@ header {
 header h1 {
   margin: 0;
 }
+
 footer {
   position: relative;
   bottom: 0;
