@@ -1,15 +1,18 @@
 <template>
-    <div>
-        <botonComponente :id="7"></botonComponente>
-    </div>
+  <div>
+    <h2>
+      Esta página esta dedicada a explicar y mostrar el funcionamiento de aspectos básicos de Vue.js
+    </h2>
+    <p>
+      Cada página tratará sobre un tema, para navegar entre ellas, pulse los botones en la parte
+      inferior de la página
+    </p>
+  </div>
 </template>
 <script>
-import botonComponente from '@/components/botonComponente.vue';
-export default{
-  name:"app",
-  components:{
-    botonComponente   
-  }
+export default {
+  name: 'app',
+  components: {},
 }
 </script>
 <style></style>
