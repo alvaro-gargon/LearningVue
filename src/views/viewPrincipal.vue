@@ -20,4 +20,17 @@ export default {
   },
 }
 </script>
-<style></style>
+<style scoped>
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+</style>

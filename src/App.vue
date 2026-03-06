@@ -25,27 +25,10 @@ const animationConfig = {
     <header>
       <h1>Esta es una prueba de primer uso del framework VUE</h1>
     </header>
-    <h3>
+    <h3 style="text-align: center">
       Como se puede comprobar,esto es una SPA (single page application) ya que, aunque cambia la
       ruta en la url, en verdad seguimos en la misma página, y NO SE HA RECARGADO al cambiar la ruta
     </h3>
-    <div class="dx-field-value-static">
-      <p>
-        <span id="subject4">Con la api DxPopover</span>
-        (<a id="link4">ver</a>)
-      </p>
-
-      <DxPopover
-        :width="300"
-        :shading="true"
-        target="#link4"
-        show-event="click"
-        position="top"
-        shading-color="rgba(0, 0, 0, 0.5)"
-      >
-        Esto es un popop "import { DxPopover } from 'devextreme-vue/popover'"
-      </DxPopover>
-    </div>
 
     <RouterView />
   </main>

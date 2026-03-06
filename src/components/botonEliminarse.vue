@@ -17,3 +17,11 @@ export default {
   },
 }
 </script>
+<style scoped>
+button {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+}
+</style>
