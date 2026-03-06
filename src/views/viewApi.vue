@@ -1,17 +1,19 @@
 <template>
   <!-- Vista donde se mostraran un menu con botones diferentes dependiendo del usuario -->
-  <nav>
-    <h2>{{ nombre }}</h2>
-    <button v-for="item in menu" :key="item.id">
-      {{ item.texto }}
-    </button>
-  </nav>
-  <label>Elige tu usuario</label>
-  <select v-model="nombre">
-    <option value="admin">admin</option>
-    <option value="editor">editor</option>
-    <option value="invitado">invitado</option>
-  </select>
+  <div class="centrar">
+    <nav>
+      <h2>{{ nombre }}</h2>
+      <button v-for="item in menu" :key="item.id">
+        {{ item.texto }}
+      </button>
+    </nav>
+    <label>Elige tu usuario</label>
+    <select v-model="nombre">
+      <option value="admin">admin</option>
+      <option value="editor">editor</option>
+      <option value="invitado">invitado</option>
+    </select>
+  </div>
 </template>
 
 <script>
@@ -56,7 +58,21 @@ export default {
 }
 </script>
 <style scoped>
-.row {
-  background-color: red;
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h2 {
+  text-align: center;
+}
+button {
+  background-color: orange;
+  /* display: block; */
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px;
 }
 </style>
