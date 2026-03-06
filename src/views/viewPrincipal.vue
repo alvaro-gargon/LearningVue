@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>
+    <h2 v-resaltar>
       Esta página esta dedicada a explicar y mostrar el funcionamiento de aspectos básicos de Vue.js
     </h2>
     <BotonEliminarse></BotonEliminarse>
@@ -12,11 +12,24 @@
 </template>
 <script>
 import BotonEliminarse from '@/components/botonEliminarse.vue'
-
+const vResaltar = {
+  mounted(el) {
+    el.style.cursor = 'pointer'
+    el.addEventListener('click', () => {
+      el.style.backgroundColor = 'yellow'
+    })
+  },
+  unmounted(el) {
+    el.removeEventListener('click', () => {})
+  },
+}
 export default {
   name: 'app',
   components: {
     BotonEliminarse,
+  },
+  directives: {
+    resaltar: vResaltar,
   },
 }
 </script>
