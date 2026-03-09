@@ -1,27 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-
-const animationConfig = {
-  show: {
-    type: 'pop',
-    from: {
-      scale: 0,
-    },
-    to: {
-      scale: 1,
-    },
-  },
-  hide: {
-    type: 'fade',
-    from: 1,
-    to: 0,
-  },
-}
 </script>
 
 <template>
   <main>
-    <header>
+    <header class="header-pagina-principal-vue">
       <h1>Esta es una prueba de primer uso del framework VUE</h1>
     </header>
     <h3 style="text-align: center">
@@ -39,23 +22,29 @@ const animationConfig = {
   </footer>
 </template>
 
-<style scoped>
-.layout {
-  min-height: 100vh;
+<style>
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
-
 main {
-  flex: 1;
+  flex-grow: 1;
 }
 
-header {
+.header-pagina-principal-vue {
   background-color: orange;
   text-align: center;
 }
 
-header h1 {
+.header-pagina-principal-vue h1 {
   margin: 0;
 }
 
