@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import viewPrincipal from '@/views/viewPrincipal.vue'
 import ViewComponentes from '@/views/viewComponentes.vue'
 import ViewApi from '@/views/viewApi.vue'
+import ViewComponentesDinamicos from '@/views/viewComponentesDinamicos.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -15,6 +16,11 @@ const router = createRouter({
       path: '/componentes',
       name: 'componentes',
       component: ViewComponentes,
+    },
+    {
+      path: '/componentes-dinamicos',
+      name: 'componentes-dinamicos',
+      component: ViewComponentesDinamicos,
     },
     {
       path: '/apis',

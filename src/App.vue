@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import { DxPopover } from 'devextreme-vue/popover'
 
 const animationConfig = {
   show: {
@@ -36,32 +35,37 @@ const animationConfig = {
     <RouterLink to="/"><button>Principal</button></RouterLink>
     <RouterLink to="/componentes"><button>Componentes</button></RouterLink>
     <RouterLink to="/apis"><button>APIs</button></RouterLink>
+    <RouterLink to="/componentes-dinamicos"><button>Comp. Dinamicos</button></RouterLink>
   </footer>
 </template>
 
 <style scoped>
-* {
-  box-sizing: border-box;
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 main {
-  height: 90%;
+  flex: 1;
 }
+
 header {
   background-color: orange;
   text-align: center;
 }
+
 header h1 {
   margin: 0;
 }
 
 footer {
-  position: relative;
-  bottom: 0;
-  height: 10%;
   background-color: antiquewhite;
   display: flex;
   justify-content: space-around;
+  padding: 10px;
 }
+
 footer button {
   width: 160px;
   height: 40px;
