@@ -17,7 +17,6 @@ export default {
       type: Number,
       default: 1,
       required: false,
-      validator: (number) => number > 0,
     },
   },
   data() {

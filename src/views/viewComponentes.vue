@@ -1,15 +1,10 @@
 <template>
   <div class="row">
-    <div>
+    <div class="divComponente">
       <botonComponente :id="-7"></botonComponente>
     </div>
     <div>
-      <imagen
-        url="../../public/botonComponente.PNG"
-        ,
-        texto="Foto del componente"
-        carpeta="public"
-      ></imagen>
+      <imagen url="/botonComponente.PNG" texto="Foto del componente" carpeta="public"></imagen>
       <div class="columna">
         <p>
           El validator en los props de los componentes solo lanzan un warning a consola sino se
@@ -68,5 +63,8 @@ export default {
 }
 p {
   font-size: 1.1rem;
+}
+.divComponente {
+  margin-left: 50px;
 }
 </style>

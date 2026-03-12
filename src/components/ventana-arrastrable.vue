@@ -1,8 +1,8 @@
 <template>
   <div class="window" :style="{ left: x + 'px', top: y + 'px' }">
-    <div class="titlebar" @mousedown="startDrag">Ventana arrastrable</div>
+    <div class="titlebar" @mousedown="startDrag">Arrastrar</div>
 
-    <div class="content">Contenido aquí</div>
+    <div class="content">Aqui habria contenido</div>
   </div>
 </template>
 
@@ -62,6 +62,8 @@ export default {
   background: #444;
   color: white;
   padding: 8px;
+  width: 100%;
+  text-align: center;
   cursor: grab;
   user-select: none;
 }
