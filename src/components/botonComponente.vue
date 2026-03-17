@@ -4,6 +4,7 @@
     <h3>Esto que esta viendo es un componente</h3>
     <button @click="acepto" v-show="aceptar">Aceptar</button><br />
     <input v-model="nombre" />
+    <button @click="guardar">Guardar cambios</button><br />
     <p>Mi nombre es {{ nombre }}</p>
     <p>Si tuviera el id que la gente querria... : {{ id }}</p>
     <p>Si fuera el id que yo quiero ser... : {{ idSaneado }}</p>
@@ -34,6 +35,7 @@ export default {
     acepto() {
       this.aceptar = false
     },
+    guardar() {},
   },
 }
 </script>
